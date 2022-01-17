@@ -15,12 +15,12 @@ export function MyStack() {
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ title: "Home screen" }}
+          options={{ title: "Red Wines - SignIn" }}
         />
         <Stack.Screen
           name="Settings"
           component={SettingsScreen}
-          options={{ title: "Settings screen" }}
+          options={{ title: "Red Wines" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

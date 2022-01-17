@@ -28,7 +28,8 @@ const handleGoogleSignIn = () => {
 
   return (
     <View style={styles.screen}>
-      <Text>The Home Screen!</Text>
+      <Text style={styles.texttitle}>List of red wines</Text>
+      <Text style={styles.textbold}>Prijava putem Google SignIn-a</Text>
       <View style={styles.button}>
       <Button
         title="Google SignIn"
@@ -45,9 +46,21 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#F04026"
   },
   button:{
     width: 200,
     height: 200
-  }
+  },
+  textbold: {
+    
+    color: "white",
+    fontSize: 20
+   },
+   texttitle: {
+    fontWeight:"bold",
+    color: "white",
+    fontSize: 40,
+    paddingBottom: 10
+   },
 });

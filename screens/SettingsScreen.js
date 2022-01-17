@@ -10,7 +10,7 @@ export function SettingsScreen({ route, navigation }) {
 
   const getData = async () => {
     try {
-      const response = await fetch("https://api.sampleapis.com/rickandmorty/characters")
+      const response = await fetch("https://api.sampleapis.com/wines/reds")
       const json = await response.json()
       setData(json)
     } catch (error) {
@@ -29,8 +29,7 @@ export function SettingsScreen({ route, navigation }) {
   }
   return (
     <View style={styles.screen}>
-      <Text>The Settings Screen!</Text>
-      <Button title="Go to the Home screen!" onPress={handleHomePress} />
+  
 
       <View>
         {isLoading ? (
@@ -50,9 +49,11 @@ export function SettingsScreen({ route, navigation }) {
                   />
                 </View>
                 <View>
-                  <Text>{item.name}</Text>
-                  <Text>{item.origin}</Text>
-                  <Text>{item.species}</Text>
+                  <Text style={styles.textbold}>{item.wine}</Text>
+                  <Text style={styles.text}>Winery: {item.winery}</Text>
+                  <Text style={styles.text}>Location: {item.location}</Text>
+                  <Text style={styles.text}>Rating: {item.rating.average}</Text>
+                  <Text style={styles.text}>Reviews: {item.rating.reviews}</Text>
                 </View>
 
               </View>
@@ -68,6 +69,7 @@ export function SettingsScreen({ route, navigation }) {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
+    backgroundColor: "#F04026"
 
   },
   itemWrapper: {
@@ -79,5 +81,17 @@ const styles = StyleSheet.create({
     height: 100,
     resizeMode: "contain"
   },
+
+  textbold: {
+   fontWeight:"bold",
+   color: "white",
+   fontSize: 18
+  },
+
+  text: {
+
+    color: "white"
+   },
+ 
 
 });

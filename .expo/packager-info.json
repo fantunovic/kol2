@@ -3,7 +3,7 @@
   "expoServerPort": 19000,
   "packagerPort": 19000,
   "webpackServerPort": 19006,
-  "expoServerNgrokUrl": "https://it-rai.anonymous.vjezbakol2.exp.direct",
-  "packagerNgrokUrl": "https://packager.it-rai.anonymous.vjezbakol2.exp.direct",
-  "ngrokPid": 14468
+  "expoServerNgrokUrl": "https://it-rai.anonymous.kol2.exp.direct",
+  "packagerNgrokUrl": "https://packager.it-rai.anonymous.kol2.exp.direct",
+  "ngrokPid": 9636
 }
